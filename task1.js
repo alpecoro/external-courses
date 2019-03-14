@@ -1,7 +1,5 @@
 //Сделано, на проверку
 
-var str, nmb, undef
-
 function func (val) {
     if (typeof(val) == 'string') {
         return 'string';
