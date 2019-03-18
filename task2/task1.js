@@ -1,4 +1,3 @@
-
 function func (val) {
     if (typeof(val) == 'string') {
         return 'string';
