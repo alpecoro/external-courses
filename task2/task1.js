@@ -1,8 +1,9 @@
 function func (val) {
-    if (typeof(val) == 'string') {
-        return 'string';
-    } else if (typeof(val) == 'number') {
-        return 'number';
+    var res = typeof(val)
+    if (res == 'string') {
+        return res;
+    } else if (res == 'number') {
+        return res;
     } 
 }
 
