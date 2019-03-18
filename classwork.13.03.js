@@ -1,5 +1,3 @@
-//Сделано, на проверку
-
 function func (name, age) {
         return {
             name: name, age: age,
