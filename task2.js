@@ -1,5 +1,3 @@
-//Сделано, на проверку
-
 var arr = [1, '2', 'three', 4, 'five', '6', 'VII', 'eight', 9, 'X'];
 
 for (var index = 0; index < arr.length; index++) {

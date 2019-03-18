@@ -1,15 +1,9 @@
-//Сделано, на проверку
-
-var str, nmb, undef
-
 function func (val) {
     if (typeof(val) == 'string') {
         return 'string';
     } else if (typeof(val) == 'number') {
         return 'number';
-    } else {
-        return 'undefined';
-    }
+    } 
 }
 
 console.log (func(10));
