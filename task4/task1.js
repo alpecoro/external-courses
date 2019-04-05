@@ -1,25 +1,27 @@
 var veggies = {
-    tomato: true,
-    pumpkin: true,
-    cucumber: false,
-    pepper: true
+    tomato: 245,
+    pumpkin: 457,
+    cucumber: 172,
+    pepper: 7,
 }
 
 var newVeggies = Object.create(veggies);
-newVeggies.mushrooms = true;
-//var res = newVeggies.hasOwnProperty('cucumber');
+newVeggies.mushrooms = 215;
+newVeggies.onions = undefined;
 
-newVeggies.hasOwnProperty('mush');
-
-function srch (key, obj) {
-    var res = obj.hasOwnProperty(key);
-    for (key in obj) {
-        if (res == false) {
-            return 'Protorype';
+function srchProto(obj, key) {
+        if ((obj[key] == undefined) && 
+           (obj.__proto__[key] == undefined) && 
+           (newVeggies.hasOwnProperty(key) == true)) {
+            return 'Not a Proto'
+        } else if ((obj[key] == undefined) && 
+            (obj.__proto__[key] == undefined)) {
+            return 'Not a key'
+        } else if (obj[key] == obj.__proto__[key]) {
+            return 'Proto'
         } else {
-            return 'Not a proto';
+            return 'Not a Proto'
         }
-    }
 }
 
-console.log(srch('mush', newVeggies))
+console.log(srchProto(newVeggies, 'onions'))
