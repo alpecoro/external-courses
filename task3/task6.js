@@ -20,7 +20,7 @@ var testObj = {
         login: 'vasya1995',
         password: 'qwerty',
         profile: {
-            dateOfBirth: 1995,
+            yearOfBirth: 1995,
             cityOfOrigin: 'Minsk',
             currentCity: 'New York',
         }
