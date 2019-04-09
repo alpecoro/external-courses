@@ -1,6 +1,6 @@
 function func (str, obj) {
 
-    if (str in obj == true) {
+    if (str in obj true) {
         return obj;
     } else {
         obj[str] = 'new';
