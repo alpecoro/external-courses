@@ -1,5 +1,8 @@
 function func (obj) {
-    var clone = Object.assign ({}, obj);
+    var clone = {};
+    for (key in obj) {
+        clone[key] = obj[key]
+    }
     return clone;
 }
 

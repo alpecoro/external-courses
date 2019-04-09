@@ -1,6 +1,6 @@
 function func (str, obj) {
 
-    if (str in obj == true) {
+    if (str in obj) {
         return true;
     } else {
         return false;

@@ -1,7 +1,7 @@
 function func (str, obj) {
 
     if (str in obj == true) {
-        return true;
+        return obj;
     } else {
         obj[str] = 'new';
         return obj;
