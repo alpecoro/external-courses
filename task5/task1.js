@@ -1,55 +1,48 @@
-var Calculator = {
+var Calculator = (function() {
     
-    currentValue: 0,
+    var currentValue = 0;
 
-    reset: function() {
-        this.currentValue = 0;
-        return this.currentValue;
-    },
+    return {
+        reset: function reset() {
+            currentValue = 0;
+            return currentValue;
+        },
 
-    getResult: function() {
-        return this.currentValue;
-    },
+        getResult: function getResult() {
+            return currentValue;
+        },
 
-    add: function(num) {
-        if (arguments.length == 0) {
-            return this.currentValue;
-        } 
-        var a = this.currentValue + num;
-        this.currentValue = a;
-        return a;
-        
-    },
+        add: function add(num) {
+            if (arguments.length == 0) {
+                num = 0;
+            };
+            currentValue = currentValue + num;
+            return add;
+        },
 
-    substract: function(num) {
-        if (arguments.length == 0) {
-            return this.currentValue;
-        } else {
-        var s = this.currentValue - num;
-        this.currentValue = s;
-        return s;
-        }
-    },
+        substract: function substract(num) {
+            if (arguments.length == 0) {
+                num = 0;
+            }
+            currentValue = currentValue - num;
+            return substract;
+        },
 
-    divide: function(num) {
-        if (arguments.length == 0) {
-            return this.currentValue;
-        } else {
-        var d = this.currentValue / num;
-        this.currentValue = d;
-        return d;
-        }    
-    },
+        divide: function divide(num) {
+            if (arguments.length == 0) {
+                num = 0;
+            }
+            currentValue = currentValue / num;
+            return divide;
+        },
 
-    multiply: function(num) {
-        if (arguments.length == 0) {
-            return this.currentValue;
-        } else {
-        var m = this.currentValue * num;
-        this.currentValue = m;
-        return m;
+        multiply: function multiply(num) {
+            if (arguments.length == 0) {
+                num = 0;
+            }
+            currentValue = currentValue * num;
+            return multiply;
         }
     }
-}
-
+})()
 
