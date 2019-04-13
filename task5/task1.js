@@ -13,7 +13,7 @@ var Calculator = (function() {
         },
 
         add: function add(num) {
-            if (arguments.length == 0) {
+            if (arguments.length == undefined) {
                 num = 0;
             };
             currentValue = currentValue + num;
@@ -21,7 +21,7 @@ var Calculator = (function() {
         },
 
         substract: function substract(num) {
-            if (arguments.length == 0) {
+            if (arguments.length == undefined) {
                 num = 0;
             }
             currentValue = currentValue - num;
@@ -29,16 +29,16 @@ var Calculator = (function() {
         },
 
         divide: function divide(num) {
-            if (arguments.length == 0) {
-                num = 0;
+            if (arguments.length == !isNaN(num)) {
+                num = 1;
             }
             currentValue = currentValue / num;
             return divide;
         },
 
         multiply: function multiply(num) {
-            if (arguments.length == 0) {
-                num = 0;
+            if (arguments.length == !isNaN(num)) {
+                num = 1;
             }
             currentValue = currentValue * num;
             return multiply;
