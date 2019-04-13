@@ -1,5 +1,3 @@
-var myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-
 function arrCopy (arr, begin, end) {
     
     if (end == undefined) {
@@ -18,10 +16,8 @@ function arrCopy (arr, begin, end) {
         end = arr.length + end;
     }
 
-    var result = new Array(end - begin);
+    var result = [];
     for (var i = begin; i < end; i++) {
-        result[i - begin] = arr[i]
+        result.push(arr[i]);
     }
-    return result
-}
-
+  
