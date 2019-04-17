@@ -1,6 +1,7 @@
 body {
-    background: #FAF1DE;
+    
     font-family: Arial, Helvetica, sans-serif;
+    color: rgba(104, 38, 18, 0.582)
 }
 
 h1 {
@@ -23,5 +24,25 @@ h2 {
 }
 
 .paragraphs {
+    background: rgb(249, 210, 165);
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 4%;
+}
 
+table {
+    background: hsl(19, 49%, 68%);
+    width: 20cm;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Condensed'
+}
+
+pre {
+    text-align: left;
+    padding: 10mm;
+    background: #F7DFBC;
+    height: 100pt
 }
