@@ -1,0 +1,18 @@
+div.two {
+    max-width: 200px;
+    border: dotted;
+    text-align: center;
+}
+
+#three {
+    max-width: 200px;
+    border: dashed;
+    text-align: center;
+}
+
+#five {
+    max-width: 200px;
+    outline: solid;
+    text-align: center;
+}
+

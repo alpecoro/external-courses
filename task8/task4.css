@@ -1,0 +1,27 @@
+body {
+    background: #FAF1DE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.lists {
+    background: bisque;
+    max-width: 400px;
+}
+
+.lists h3 {
+    text-align: center;
+}
+
+.paragraphs {
+
+}
