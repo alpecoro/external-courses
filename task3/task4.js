@@ -1,18 +1,6 @@
 function func (str, obj) {
-
-    if (str in obj true) {
-        return obj;
-    } else {
+    if (!(str in obj)) {
         obj[str] = 'new';
-        return obj;
     }
+    return obj;
 }
-
-var testObj = {
-    name: 'Vasya',
-    surname: 'Pupkin',
-    age: 21
-};
-
-func('salary', testObj)
-func('name', testObj)
