@@ -1,0 +1,43 @@
+#parent {
+    background: white;
+    width: 466px;
+    height: 136px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 30px;
+}
+
+#child {
+    background: lightgrey;
+    width: 462px;
+    height: 132px;
+    border-radius: 27px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+button {
+    background: linear-gradient(to bottom, whitesmoke, #0000002e);
+    width: 430px;
+    height: 106px;
+    border-radius: 19px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #525252;
+    text-shadow: 0px 1px 1px rgb(241, 241, 241);
+}
+
+.icon-1 {
+    color: #878787;
+    position: relative;
+    left: -10px;
+}
+
+.icon-2 {
+    color: #878787;
+    position: relative;
+    right: -10px;
+}

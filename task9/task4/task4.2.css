@@ -1,0 +1,27 @@
+#parent {
+    background: #5fb78d;
+    height: 300px;
+    width: 95%;
+    top: 10px;
+    left: 10px;
+}
+
+#firstChild {
+    background: #97d1b5;
+    height: 300px;
+    width: 94%;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    z-index: -1;
+}
+
+#secondChild {
+    background: #5fb78d50;
+    height: 300px;
+    width: 94%;
+    position: absolute;
+    top: 52px;
+    left: 52px;
+    z-index: -9;
+}
