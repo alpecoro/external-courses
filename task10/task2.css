@@ -1,0 +1,38 @@
+table {
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+    color: #5d7289;
+    height: 490px;
+    width: 600px;
+}
+
+#heading {
+    
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #7b8ba4;
+    background: #e7ecf3;
+    text-align: center;
+    height: 2rem;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.one {
+    background: #f1f5f9;
+}
+
+.two {
+    background: #e7ecf3;
+}
+
+td {
+    padding: 15px;
+}
+
+tr:hover {
+    background: #e1e4e8;
+}

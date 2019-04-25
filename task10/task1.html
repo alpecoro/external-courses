@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset='utf-8'>
+<title>Task 1</title>
+<style>
+    body {
+        font-family: Tahoma;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+<fieldset>
+<legend>Personal data</legend>
+<form action='http://httpbin.org/post' method='post'> <br>
+
+    <label>Surname </label> <input type='text' name='surname'> <br>
+    <br>
+
+    <label>First Name </label> <input type='text' name='name'> <br>
+    <br>
+
+    <label>Middle Name </label> <input type='text' name='middleName'> <br>
+    <br>
+
+    <label>You are </label> <input type='radio' name='gender' value='female'>female <input type='radio' name='gender' value='male'>male <br>
+    <br>
+
+    <label>Age </label> <input type='number' name='age' min='18' max='101'> <br>
+    <br>
+
+    <label>Country of Residence </label> <select name='country'> <option>Russia</option> </select> <br>
+    <br>
+
+    <label>City </label> <input type='checkbox' name='city' value='rzn'>Ryazan <input type='checkbox' name='city' value='msc'>Moscow <br>
+    <br>
+
+    <label>Photography </label> <input type='file' name='file'>
+
+    <hr>
+    <br>
+    <label>Title </label>
+    <select name='title' size='8' multiple>
+        <optgroup label='Technologies'>
+            <option>Web Master</option>
+            <option>Database Administrator</option>
+            <option>Computer-aided design</option>
+        </optgroup>
+        <optgroup label='Finance'>
+            <option>Economic Planning</option>
+            <option>Management Accounting</option>
+            <option>Budgeting and Planning</option>
+        </optgroup>
+    </select> <br>
+    <br>
+
+    <label>Salary </label> <input type='range' name="salary"> <br>
+    <br>
+
+    <textarea name='comment' placeholder='Tell us about yourself...' style='width: 400px; height: 150px'></textarea>
+
+</fieldset>
+
+<fieldset>
+<legend>Contact info</legend>
+
+    <label>Site </label><input type='url' name='website'><br>
+    <br>
+    <label>Email </label><input type='email' name='email-address'><br>
+    <br>
+    <label>Phone </label><input type='tel' name='phone-number'><br>
+    <br>
+
+</fieldset>
+<br>
+<label>Password </label><input type="password" name="password" required> <br>
+<br>
+<input type='submit' name="submit"> <input type="reset">
+</form>
+</body>
+</html>
